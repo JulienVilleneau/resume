@@ -1,20 +1,29 @@
+@font-face {
+    font-family: MonaSans;
+    src: url('fonts/Mona-Sans.woff2');
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: MonaSans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
     max-width: 960px;
     margin: auto;
 }
 
+h1, h2, h3 {
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
 h1 {
-    font-size: 3em;
-    letter-spacing: .6em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    font-size: 4em;
+    padding-top: .2em;
+    padding-bottom: .4em;
 }
 
 h2 {
     font-size: 1.5em;
-    padding-bottom: 1em;
+    padding-bottom: .3em;
 }
 
 h3 {
@@ -22,15 +31,38 @@ h3 {
     padding-bottom: 1em;
 }
 
-main { 
+main {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
     margin-top: 3em;
 }
 
 header {
     text-align: center;
     margin: auto 2em;
+}
+
+#header > h1 {
+    /*font-family: "Mono Sans", "Calibri", sans-serif;*/
+    font-family: MonaSans;
+    font-weight: 600;
+}
+
+#headbandFirst {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+#perso-img {
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 100px;
+}
+
+#contact {
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid;
 }
 
 section {
@@ -51,11 +83,24 @@ hr {
     height: 1px;
 }
 
-h1, h2, h3 {
-    font-weight: 100;
-    margin-bottom: 0;
+.justify {
+    text-align: justify;
 }
 
 #mainLeft {
     border-right: 1px solid lightgray;
+}
+
+#certifications a {
+    text-decoration: none;
+}
+
+#certifications img {
+    width: 60px;
+    height: 60px;
+}
+
+#formations > h3 {
+    padding-bottom: 0;
+    font-weight: 700;
 }
