@@ -3,10 +3,22 @@
     src: url('fonts/Mona-Sans.woff2');
 }
 
+:root {
+	--c-grey-100: #f4f6f8;
+	--c-grey-200: #e3e3e3;
+	--c-grey-300: #b2b2b2;
+	--c-grey-400: #7b7b7b;
+	--c-grey-500: #3d3d3d;
+
+    --c-grey-light: lightgray;
+
+	--c-blue-500: #688afd;
+}
+
 body {
     font-family: MonaSans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
-    max-width: 960px;
+    max-width: 1280px;
     margin: auto;
 }
 
@@ -43,9 +55,12 @@ header {
 }
 
 #header > h1 {
-    /*font-family: "Mono Sans", "Calibri", sans-serif;*/
     font-family: MonaSans;
     font-weight: 600;
+}
+
+#header > h2 {
+    text-align: left;
 }
 
 #headbandFirst {
@@ -79,7 +94,7 @@ p {
 
 hr {
     border: none;
-    background-color: lightgray;
+    background-color: var(--c-grey-light);
     height: 1px;
 }
 
@@ -88,7 +103,7 @@ hr {
 }
 
 #mainLeft {
-    border-right: 1px solid lightgray;
+    border-right: 1px solid var(--c-grey-light);
 }
 
 #certifications a {
@@ -104,3 +119,99 @@ hr {
     padding-bottom: 0;
     font-weight: 700;
 }
+
+
+/* Timeline - Start */
+
+.timeline {
+	width: 85%;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 32px 0 32px 32px;
+	border-left: 2px solid var(--c-grey-200);
+	font-size: 1.125rem;
+}
+
+.timeline-item {
+	display: flex;
+	gap: 24px;
+	& + * {
+		margin-top: 24px;
+	}
+}
+
+.timeline-item-date {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 65px;
+	height: 30px;
+	margin-left: -65px;
+	flex-shrink: 0;
+	overflow: hidden;
+	box-shadow: 0 0 0 6px #fff;
+    font-size: 15px;
+    text-align: center;
+}
+
+.timeline-item-description {
+	display: flex;
+	padding-top: 6px;
+	gap: 8px;
+	color: var(--c-grey-400);
+    font-weight: 700;
+
+	img {
+		flex-shrink: 0;
+	}
+	a {
+		color: var(--c-grey-500);
+		text-decoration: none;
+		&:hover,
+		&:focus {
+            outline: 0;
+			color: var(--c-blue-500);
+		}
+	}
+}
+
+.company-logo {
+	display: flex;
+	justify-content: center;
+	border-radius: 10%;
+	overflow: hidden;
+    flex-shrink: 0;
+	height: 20px;
+
+	img {
+		object-fit: fill;
+	}
+}
+
+.timeline-item-subject {
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.timeline-item-experience {
+	margin-top: 12px;
+	color: var(--c-grey-500);
+	border: 1px solid var(--c-grey-200);
+	box-shadow: 0 4px 4px 0 var(--c-grey-100);
+	border-radius: 6px;
+	padding: 16px;
+	font-size: 1rem;
+
+    internship >  {
+        font-weight: 700;
+    }
+}
+
+.color-blue {
+    color: var(--c-blue-500);
+}
+
+/* Timeline - End */
