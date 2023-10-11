@@ -1,10 +1,10 @@
+<!DOCTYPE html>
 <html>
      <head>
-         <link href="style.css" rel="stylesheet">
-         <title>Resume - Julien Villeneau</title>
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <link href="style.css" rel="stylesheet">
+            <title>Julien Villeneau - Resume</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
      </head>
-
      <body>
          <header id="header">
             <div id="headbandFirst">
@@ -12,10 +12,14 @@
                     <img id="perso-img" src="images/perso-img.jpg" />
                 </div>
                 <div>
-                    <!-- resume header with your name and title -->
                     <h1>Julien Villeneau</h1>
                 </div>
             </div>
+            <!-- <div>
+                <form id="form1">
+                    <input type="button" onclick="window.print();" value="Imprimer" id="export pdf" />
+                </form>
+            </div> -->
             <div id="headbandSecond">
                 <hr>
                 RESPONSABLE DE PÔLE APP INNOVATION
@@ -29,7 +33,7 @@
          </header>
          <main>
              <article id="mainLeft">
-                 <section>
+                 <section id="contact">
                      <h2>Contact</h2>
                      <p>
                         <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -44,7 +48,7 @@
                         <a href="linkedin.com/linkedin-username">linkedin.com/in/julien-villeneau</a>
                     </p>
                  </section>
-                 <section>
+                 <section id="languages">
                      <h2>Langues</h2>
                      <p>Français : Natale</p>
                      <p>Anglais : Professionnel</p>
@@ -86,15 +90,106 @@
                     <h3>Baccalauréat S</h3>
                     <p>2006-2009 - Institution Saint Louis</p>
                  </section>
+                 <section id="associative">
+                    <h2>Associatif</h2>
+                    <div>
+                        <a href="https://www.meetup.com/fr-FR/mtg-nantes" target="_blank">
+                            <img src="./images/mtg-nantes.png" alt="logo du MTG Nantes" width="150" />
+                        </a>
+                        <p>Co-créateur et co-organisateur depuis 2017</p>
+                    </div>
+                 </section>
+                 <section id="hobbies">
+                    <h2>Centres d'intérêts</h2>
+                    <p>Ultra-trail, motocyclisme</p>
+                    <p>Technologie</p>
+                    <p>Bricolage</p>
+                 </section>
              </article>
              <article id="mainRight">
                  <section>
-                     <h2>SKILLS</h2>
-                     <p>Coming soon...</p>
+                    <div id="skills">
+                        <div>
+                            <h2>Compétences techniques</h2>
+                            <div class="skills-grid">
+                                <div class="skills-grid-row">
+                                    <div>Architecture</div>
+                                    <div>Monolithique, MVC, N-tier, SOA, micro-services, CQRS, Event-Driven, DDD</div>
+                                </div>
+                                <div class="skills-grid-row">
+                                    <div>Architecture d'API</div>
+                                    <div>REST, SOAP, gRPC, WebSocket, Webhook</div>
+                                </div>
+                                <div class="skills-grid-row">
+                                    <div>Cloud</div>
+                                    <div>Azure (IaaS / PaaS / SaaS)</div>
+                                </div>
+                                <div class="skills-grid-row">
+                                    <div>Frontend</div>
+                                    <div>HTML, CSS, JavaScript, Typescript, Angular, React</div>
+                                </div>
+                                <div class="skills-grid-row">
+                                    <div>Backend</div>
+                                    <div>.NET/C#, Java, PHP, node.js</div>
+                                </div>
+                                <div class="skills-grid-row">
+                                    <div>Scripting</div>
+                                    <div>Python, PowerShell, Bash</div>
+                                </div>
+                                <div class="skills-grid-row">
+                                    <div>SGBD</div>
+                                    <div>SQL, MySQL, Oracle, PostgreSQL, Azure Cosmos DB</div>
+                                </div>
+                                <div class="skills-grid-row">
+                                    <div>DevOps</div>
+                                    <div>Git, GitHub, Gitlab, Azure DevOps, Jira, Confluence, Docker, Kubernetes, Terraform</div>
+                                </div>
+                                <div class="skills-grid-row">
+                                    <div>Méthodologie</div>
+                                    <div>Agile, Scrum, Cycle en V, Green Soft Model, UML</div>
+                                </div>
+                                <div class="skills-grid-row">
+                                    <div>Sécurité</div>
+                                    <div>OAuth 2.0, GitHub Advanced Security</div>
+                                </div>
+                                <div class="skills-grid-row">
+                                    <div>Autres</div>
+                                    <div>Microsoft 365, Power Platform</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div>
+                            <h2>Compétences générales</h2>
+                            <div class="skills-grid">
+                                <div class="skills-grid-row">
+                                    <div>Comportemental</div>
+                                    <div>Adaptabilité, réactivité, sens des responsabilités, capacité à s'organiser, gestion du stress, esprit d’initiative, force de proposition</div>
+                                </div>
+                                <div class="skills-grid-row">
+                                    <div>Relationnel</div>
+                                    <div>Leadership, capacité à motiver, esprit d’équipe et de coopération, confiance en soi</div>
+                                </div>
+                                <div class="skills-grid-row">
+                                    <div>Cognitif</div>
+                                    <div>Esprit critique, résilience, persévérance, curiosité intellectuelle</div>
+                                </div>
+                                <div class="skills-grid-row">
+                                    <div>Management</div>
+                                    <div>Gestion de projet, gestion d'équipe, gestion de carrière. Mon management est basé sur la transparence, la bienveillance et l'excellence</div>
+                                </div>
+                                <div class="skills-grid-row">
+                                    <div>Technique</div>
+                                    <div>Architecture, éco-conception, avant-Vente, cadrage/audit, analyse du besoin, estimation de charges</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                  </section>
                  <section>
                     <h2>Expérience professionnelle</h2>
                     <ol class="timeline">
+                        <!-- Talan Responsable de Pôle -->
                         <li class="timeline-item">
                             <span class="timeline-item-date">Today</span>
                             <div class="timeline-item-wrapper">
@@ -107,28 +202,95 @@
                                     <span>Responsable de pôle App Innovation</span>
                                 </div>
                                 <div class="timeline-item-experience">
-                                    <!-- <p><strong>Vinci, EDF Renouvelables et un client dans le domaine de la santé - 1 an</strong></p>
-                                    <p>
-                                        Contexte : développement et intégration d'applications dans Microsoft Teams sous la forme de Minimum Viable Product
+                                    <h4>&#x2794; Job tasks</h4>
+                                    <div class="timeline-item-experience-two-column">
+                                        <div>
+                                            <p><strong>Stratégie du pôle & avant-vente</strong></p>
+                                            <ul>
+                                                <li>Définition de l'offre stratégique "App innovation" (dev. applicatif, DevOps, UX/UI)</li>
+                                                <li>Suivi budgétaire de l’activité (P&L, plan de charges, forecasts, ...)</li>
+                                                <li>Réponse aux appels d’offre (Assist. technique, Forfait, Centre de Services)</li>
+                                                <li>Relation avec les partenaires Talan pour les besoins de sous-traitance</li>
+                                                <li>Aide aux choix technologiques et stratégiques (architecture logicielle, langages/frameworks, solutions cloud, méthodologie et dispositif projet, ...)</li>
+                                                <li>Animation de comités & communautés internes Talan pour cultiver l’expertise et l’innovation</li>
+                                                <li>Définition de la stratégie de recrutement avec la direction et l’équipe Recrutement</li>
+                                                <li>Veille technologique active sur les thématiques en lien avec la stratégie du Pôle</li>
+                                                <li>Animation de talks / conférences sur des salons ou évènements</li>
+                                            </ul>
+                                            <p>&nbsp;</p>
+                                            <p><strong>Référent groupe de l'offre Microsoft/GitHub sur le pilier "Modern Apps"</strong></p>
+                                            <ul>
+                                                <li>Redéfinition d'une offre unique stratégique "Modern Apps" pour le groupe Talan</li>
+                                                <li>Suivi des objectifs cibles du groupe (formations et certifications, programmes partenaire, ...)</li>
+                                                <li>Animation d'une core team transverse dans le groupe</li>
+                                                <li>Instauration du partenariat de Talan avec Github</li>
+                                            </ul>
+                                        </div>
+                                        <div></div>
+                                        <div>
+                                            <p><strong>Management de proximité</strong></p>
+                                            <ul>
+                                                <li>Responsabilité opérationnelle des collaborateurs de l’équipe</li>
+                                                <li>Gestion du planning d’occupation du Pôle</li>
+                                                <li>Conduite des entretiens annuels, suivi de mission, suivi de carrière et suivi de formation</li>
+                                                <li>Coordination « client / commercial / collaborateur » pour assurer la satisfaction de tous</li>
+                                                <li>Mise en place d’un référentiel de compétences dédié au Développement applicatif</li>
+                                                <li>Entretien de recrutement</li>
+                                            </ul>
+                                            <p>&nbsp;</p>
+                                            <p><strong>Gestion de projets</strong></p>
+                                            <ul>
+                                                <li>Pilotage de projets clients</li>
+                                                <li>Définition de l’organisation et de la méthodologie nécessaire à la mise en œuvre efficace des projets</li>
+                                                <li>Suivi des études, macro-chiffrages et aide à la priorisation selon les roadmaps métier</li>
+                                                <li>Suivi des phases de conception (avec les architectes), au développement (avec les MOE et concepteurs), jusqu’à leur mise en exploitation (avec les Ops)</li>
+                                                <li>Organisation des projets (instances de gouvernance, comités de pilotage, suivi planning et financier)</li>
+                                                <li>Responsabilité des engagements de service des solutions délivrées</li>
+                                                <li>Proactivité dans la gestion des risques et force de proposition pour trouver des solutions</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <hr class="hr-margin-15">
+                                    <div>
+                                        <h4>&#x2794; Missions significatives</h4>
+                                        <p><strong>&#60;Confidentiel - Domaine bancaire&#62; - 2 an</strong></p>
+                                        <p>Contexte : modernisation d'une brique applicative (100k+ lignes de code)</p>
                                         <ul>
-                                            <li>Annuaire de contact collaboratif multi-tenant Azure</li>
-                                            <li>Interface conversationnelle pour répondre aux questions des collaborateurs (FAQ)</li>
-                                            <li>Traçabilité des échanges entre le personnel médical</li>
+                                            <li>Pilotage du projet (planning, budget)</li>
+                                            <li>Gestion du capacitaires (jusqu'à 3 développeurs)</li>
+                                            <li>Animation des comités projet et comités de pilotage</li>
+                                            <li>Analyse de l'existant : application métier de type monolithe</li>
+                                            <li>Proposition de solutions cibles en réponse aux enjeux de levée de dette technique et des besoins métier</li>
+                                            <li>APIsation et mise en place des bonnes pratiques DevOps et DevSecOps</li>
                                         </ul>
-                                    </p> -->
-                                    <hr>
-                                    <span class="color-blue">Env. technique :</span> .NET, C#, Java, PHP, Python, JavaScript, TypeScript, Angular, React, SQL, Git, GitHub, Gitlab, Azure, Azure AI Services, AWS
+                                        <p><strong>&#60;Confidentiel - ONG internationale&#62; - 1 an</strong></p>
+                                        <p>Contexte : modernisation d'une application pour la gestion des budgets</p>
+                                        <ul>
+                                            <li>Pilotage et coordination projet (planning, comitologie, budget)</li>
+                                            <li>Analyse de l'existant et amélioration du processus métier (plus simple et automatisé)</li>
+                                            <li>Revue complète de la modélisation de la base de données</li>
+                                            <li>Accompagnement technique du développeur sur le projet</li>
+                                        </ul>
+                                    </div>
+                                    <hr class="hr-margin-15">
+                                    <p>
+                                        <span class="color-blue">Env. technique :</span> .NET, C#, Java, PHP, Python, JavaScript, TypeScript, Angular, React, SQL, Git, GitHub, Gitlab, Azure, Azure AI Services, AWS
+                                    </p>
                                 </div>
                             </div>
                         </li>
+                        <!-- Ai3 intègre Talan -->
                         <li class="timeline-item">
                             <span class="timeline-item-date">09/2020</span>
                             <div class="timeline-item-wrapper">
                                 <div class="timeline-item-description">
-                                    <span class="one-line">Ai3 intègre la société <a href="https://www.talan.com">Talan</a></span>
+                                    <p>
+                                        <span class="one-line">Ai3 intègre la société Talan. <a href="https://talan.com/actualites/detail-actualites/news/talan-is-merging-with-ai3-to-become-a-leader-in-cloud-and-modern-workplace-solutions/">En savoir plus</a></span>
+                                    </p>
                                 </div>
                             </div>
                         </li>
+                        <!-- Ai3 Lead technique -->
                         <li class="timeline-item">
                             <span class="timeline-item-date">&nbsp;</span>
                             <div class="timeline-item-wrapper">
@@ -141,50 +303,44 @@
                                     <span>Leader technique</span>
                                 </div>
                                 <div class="timeline-item-experience">
+                                    <h4>&#x2794; Missions significatives</h4>
                                     <p><strong>Aleda - 1 an</strong></p>
-                                    <p>
-                                        Contexte : audit et revue d'une architecture logicielle
-                                        <ul>
-                                            <li>Analyse de l'existant : application métier reposant sur une architecture micro-services</li>
-                                            <li>Développement logiciel pour l'application des bonnes pratiques de développement</li>
-                                            <li>Optimisation de la CI/CD sur Azure DevOps</li>
-                                        </ul>
-                                    </p>
+                                    <p>Contexte : audit et revue d'une architecture logicielle</p>
+                                    <ul>
+                                        <li>Analyse de l'existant : application métier reposant sur une architecture micro-services</li>
+                                        <li>Développement logiciel pour l'application des bonnes pratiques de développement</li>
+                                        <li>Optimisation de la CI/CD sur Azure DevOps</li>
+                                    </ul>
                                     <p><strong>Société Générale - 6 mois</strong></p>
-                                    <p>
-                                        Contexte : levée d'obsolesence d'un applicatif métier
-                                        <ul>
-                                            <li>Définition d'une stratégie de migration applicative</li>
-                                            <li>Ré-architecture logicielle en prévision de la mise en place d'API et d'une migration sous .NET Core</li>
-                                            <li>Coordination et réalisation de la migration technique</li>
-                                        </ul>
-                                    </p>
-                                    <p><strong>&#60;Confidentiel&#62; - 1 an et 6 mois</strong></p>
-                                    <p>
-                                        Contexte : application cloud native permettant la gestion de l'exploitation de l'entreprise (domaine immobilier)
-                                        <ul>
-                                            <li>Conception de l'architecture technique et du modèle de données</li>
-                                            <li>Développement d'algorithmes complexes pour la gestion d'arbres binaires et linéaires</li>
-                                            <li>Mise en place de l'infrastructure sur Azure et de la CI/CD sur Azure DevOps</li>
-                                        </ul>
-                                    </p>
-                                    <p><strong>&#60;Confidentiel&#62; - 3 mois</strong></p>
-                                    <p>
-                                        Contexte : prototype d'une application HoloLens permettant l'ouverture du dossier médical d'un patient grâce à la reconnaissance faciale
-                                        <ul>
-                                            <li>Développement sur HoloLens (réalité mixte)</li>
-                                            <li>Conception 3D avec Unity</li>
-                                            <li>Reconnaissance faciale grâce aux services d'IA sur Azure</li>
-                                        </ul>
-                                    </p>
-                                    <p><strong>et quelques prestations ponctuelles notamment pour Autodistribution, Christian Dior, Hutchinson, Pernod Ricard, Saft Batteries...</strong></p>
-                                    <hr>
+                                    <p>Contexte : levée d'obsolesence d'un applicatif métier</p>
+                                    <ul>
+                                        <li>Définition d'une stratégie de migration applicative</li>
+                                        <li>Ré-architecture logicielle en prévision de la mise en place d'API et d'une migration sous .NET Core</li>
+                                        <li>Coordination et réalisation de la migration technique</li>
+                                    </ul>
+                                    <p><strong>&#60;Confidentiel - Domaine immobilier&#62; - 1 an et 6 mois</strong></p>
+                                    <p>Contexte : application cloud native permettant la gestion de l'exploitation de l'entreprise</p>
+                                    <ul>
+                                        <li>Conception de l'architecture technique et du modèle de données</li>
+                                        <li>Développement d'algorithmes complexes pour la gestion d'arbres binaires et linéaires</li>
+                                        <li>Mise en place de l'infrastructure sur Azure et de la CI/CD sur Azure DevOps</li>
+                                    </ul>
+                                    <p><strong>&#60;Confidentiel - Domaine santé&#62; - 3 mois</strong></p>
+                                    <p>Contexte : prototype d'une application HoloLens permettant l'ouverture du dossier médical d'un patient grâce à la reconnaissance faciale</p>
+                                    <ul>
+                                        <li>Développement sur HoloLens (réalité mixte)</li>
+                                        <li>Conception 3D avec Unity</li>
+                                        <li>Reconnaissance faciale grâce aux services d'IA sur Azure</li>
+                                    </ul>
+                                    <p><strong>et quelques prestations ponctuelles notamment Autodistribution, Christian Dior, Hutchinson, Pernod Ricard, Saft Batteries...</strong></p>
+                                    <hr class="hr-margin-15">
                                     <p>
                                         <span class="color-blue">Env. technique :</span> .NET, C#, ASP.NET, UWP, WPF XAML, SDK HoloLens, API REST, WCF, HTML, CSS, JavaScript, Angular, React, TypeScript, SQL, Oracle, Azure Cosmos DB, Git, Azure DevOps, Jenkins, Azure, Azure AD, Azure Cognitives Services, DocuSign, Payzen
                                     </p>
                                 </div>
                             </div>
                         </li>
+                        <!-- Ai3 Ingé etudes et dev -->
                         <li class="timeline-item">
                             <span class="timeline-item-date">10/2014</span>
                             <div class="timeline-item-wrapper">
@@ -197,40 +353,36 @@
                                     <span>Ingénieur Etudes & Développement</span>
                                 </div>
                                 <div class="timeline-item-experience">
+                                    <h4>&#x2794; Missions significatives</h4>
                                     <p><strong>ENI Ecole - 8 mois</strong></p>
-                                    <p>
-                                        Contexte : formation professionnelle et qualifiante (niveau BAC+2 et Bac+4)
-                                        <ul>
-                                            <li>Technologies enseignées : C#, POO, ASP.NET MVC, SQL, Xamarin</li>
-                                            <li>Création de cours et TPs ; notamment le cours Xamarin sur 5 jours</li>
-                                            <li>Encadrement de groupes entre 10 à 45 personnes</li>
-                                        </ul>
-                                    </p>
+                                    <p>Contexte : formation professionnelle et qualifiante (niveau BAC+2 et Bac+4)</p>
+                                    <ul>
+                                        <li>Technologies enseignées : C#, POO, ASP.NET MVC, SQL, Xamarin</li>
+                                        <li>Création de cours et TPs ; notamment le cours Xamarin sur 5 jours</li>
+                                        <li>Encadrement de groupes entre 10 à 45 personnes</li>
+                                    </ul>
                                     <p><strong>Optimarché - 1 an et 9 mois</strong></p>
-                                    <p>
-                                        Contexte : solution de gestion des marchés publics entre les fournisseurs et les établissements scolaires
-                                        <ul>
-                                            <li>Etude du besoin et atelier de conception fonctionnelle</li>
-                                            <li>Développement de nouvelles rubriques au sein de la solution</li>
-                                            <li>Fiabilisation de la solution et industrialisation des livrables</li>
-                                        </ul>
-                                    </p>
+                                    <p>Contexte : solution de gestion des marchés publics entre les fournisseurs et les établissements scolaires</p>
+                                    <ul>
+                                        <li>Etude du besoin et atelier de conception fonctionnelle</li>
+                                        <li>Développement de nouvelles rubriques au sein de la solution</li>
+                                        <li>Fiabilisation de la solution et industrialisation des livrables</li>
+                                    </ul>
                                     <p><strong>HOP! - 1 an</strong></p>
-                                    <p>
-                                        Contexte : rationalisation de 3 systèmes d'informations en un unique
-                                        <ul>
-                                            <li>Mise en place une application pour les pilotes de ligne reposant sur une architecture micro-services</li>
-                                            <li>Maintien et amélioration des performances d'une application pour les personnels navigants</li>
-                                        </ul>
-                                    </p>
-                                    <p><strong>et quelques prestations ponctuelles notamment pour Brioche Pasquier...</strong></p>
-                                    <hr>
+                                    <p>Contexte : rationalisation de 3 systèmes d'informations en un unique</p>
+                                    <ul>
+                                        <li>Mise en place une application pour les pilotes de ligne reposant sur une architecture micro-services</li>
+                                        <li>Maintien et amélioration des performances d'une application pour les personnels navigants</li>
+                                    </ul>
+                                    <p><strong>et quelques prestations ponctuelles notamment Brioche Pasquier...</strong></p>
+                                    <hr class="hr-margin-15">
                                     <p>
                                         <span class="color-blue">Env. technique :</span> .NET, C#, ASP.NET, WPF, XAML, Xamarin, API REST, WCF, HTML, CSS, JavaScript, SQL, Git, Azure, Azure DevOps
                                     </p>
                                 </div>
                             </div>
                         </li>
+                        <!-- Capgemini en alternance -->
                         <li class="timeline-item">
                             <span class="timeline-item-date">06/2013</span>
                             <div class="timeline-item-wrapper">
@@ -242,24 +394,23 @@
                                     </a>
                                     <span>Ingénieur Etudes & Développement (en alternance)</span>
                                 </div>
-                                <div class="timeline-item-subject">
-                                    Maintenance évolutive et corrective d'une application mobile
-                                </div>
                                 <div class="timeline-item-experience">
+                                    <h4>&#x2794; Missions significatives</h4>
+                                    <p>Développement de l'application mobile des Agents de la Sécurité et du Contrôle des Trains (agents contrôlant les billets des voyageurs) :</p>
+                                    <ul>
+                                        <li>Découverte du mode de fonctionnement d'un centre de services (organisation, process, outils, plan de communication)</li>
+                                        <li>Développement et maintenance de programmes en environnement nouvelles technologies (.Net), principalement pour une application mobile</li>
+                                        <li>Rédaction de la documentation associée (dossier de tests unitaires, documentation programme, dossiers de livraison)</li>
+                                        <li>Approfondissement du travail en équipe, le cycle de vie des projets informatiques et développement structuré d'un projet intégrant un processus qualité très exigeant (norme, documentation, processus)</li>
+                                    </ul>
+                                    <hr class="hr-margin-15">
                                     <p>
-                                        Développement de l'application mobile des Agents de la Sécurité et du Contrôle des Trains (agents contrôlant les billets des voyageurs) :
-                                        <ul>
-                                            <li>Découverte du mode de fonctionnement d'un centre de services (organisation, process, outils, plan de communication)</li>
-                                            <li>Développement et maintenance de programmes en environnement nouvelles technologies (.Net), principalement pour une application mobile</li>
-                                            <li>Rédaction de la documentation associée (dossier de tests unitaires, documentation programme, dossiers de livraison)</li>
-                                            <li>Approfondissement du travail en équipe, le cycle de vie des projets informatiques et développement structuré d'un projet intégrant un processus qualité très exigeant (norme, documentation, processus)</li>
-                                        </ul>
-                                        <hr>
                                         <span class="color-blue">Env. technique :</span> .NET Framework, C#, Windows Mobile, Linq, SQL, RTC, EQATEC, Lean Management, Daily Stand-Up Meeting
                                     </p>
                                 </div>
                             </div>
                         </li>
+                        <!-- Divers stages -->
                         <li class="timeline-item">
                             <span class="timeline-item-date">2010 -2012</span>
                             <div class="timeline-item-wrapper">
@@ -268,13 +419,13 @@
                                 </div>
                                 <div class="timeline-item-experience">
                                     <div id="internship">
-                                        <p>Groupe AIS - 2 mois</p>
+                                        <p><strong>Groupe AIS - 2 mois</strong></p>
                                         <p><span class="color-blue">Env. technique :</span> .NET Framework, ASP.NET, C#, Linq, HTML, CSS, JavaScript, jQuery, SQL, SharePoint 2010</p>
-                                        <hr>
-                                        <p>G.L.A.C (Groupe Laitier renommé « TERRA LACTA ») - 2 mois</p>
+                                        <hr class="hr-margin-15">
+                                        <p><strong>G.L.A.C (Groupe Laitier renommé « TERRA LACTA ») - 2 mois</strong></p>
                                         <p><span class="color-blue">Env. technique :</span> HTML, CSS, PHP, MySQL, JavaScript</p>
-                                        <hr>
-                                        <p>AFPI Pays de la Loire - 2 mois</p>
+                                        <hr class="hr-margin-15">
+                                        <p><strong>AFPI Pays de la Loire - 2 mois</strong></p>
                                         <p><span class="color-blue">Env. technique :</span> HTML, CSS, PHP, MySQL, VBS</p>
                                     </div>
                                 </div>

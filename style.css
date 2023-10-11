@@ -43,6 +43,12 @@ h3 {
     padding-bottom: 1em;
 }
 
+h4 {
+    font-size: 1.1em;
+    padding: 0px;
+	margin: 0px 0px 10px 0px;
+}
+
 main {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -98,6 +104,10 @@ hr {
     height: 1px;
 }
 
+.hr-margin-15 {
+	margin: 15px 0px 15px 0px;
+}
+
 .justify {
     text-align: justify;
 }
@@ -118,6 +128,17 @@ hr {
 #formations > h3 {
     padding-bottom: 0;
     font-weight: 700;
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: 48% 4% 48%;
+}
+
+.skills-grid-row {
+    display: grid;
+	grid-template-columns: 30% 70%;
+	margin: 5px 0px 5px 0px;
 }
 
 
@@ -167,14 +188,15 @@ hr {
 	img {
 		flex-shrink: 0;
 	}
-	a {
-		color: var(--c-grey-500);
-		text-decoration: none;
-		&:hover,
-		&:focus {
-            outline: 0;
-			color: var(--c-blue-500);
-		}
+}
+
+.timeline-item-description a {
+	color: var(--c-grey-500);
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		outline: 0;
+		color: var(--c-blue-500);
 	}
 }
 
@@ -191,11 +213,6 @@ hr {
 	}
 }
 
-.timeline-item-subject {
-    font-style: italic;
-    padding-top: 10px;
-}
-
 .timeline-item-experience {
 	margin-top: 12px;
 	color: var(--c-grey-500);
@@ -203,11 +220,16 @@ hr {
 	box-shadow: 0 4px 4px 0 var(--c-grey-100);
 	border-radius: 6px;
 	padding: 16px;
-	font-size: 1rem;
+	font-size: .7rem;
 
     internship >  {
         font-weight: 700;
     }
+}
+
+.timeline-item-experience-two-column {
+	display: grid;
+	grid-template-columns: 48% 4% 48%;
 }
 
 .color-blue {
